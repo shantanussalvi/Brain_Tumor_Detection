@@ -3,8 +3,10 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from keras.models import load_model
 from keras.applications.vgg16 import preprocess_input
 import numpy as np
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/', methods=['GET'])
 def hello_world():
@@ -25,8 +27,16 @@ def predict():
 
     predictions = model.predict(finalImg)
 
-    print(predictions)
-    return predictions.tolist()
+    pred = predictions.tolist()
+    if(pred[0]):
+        return "No Tumor"
+    if(pred[1]):
+        return "Glioma"
+    if(pred[2]):
+        return "Meningioma"
+    if(pred[3]):
+        return "Pituitary Tumor"
+    return "Error processing image"
 
 if __name__ == '__main__':
     app.run(port=5000)
