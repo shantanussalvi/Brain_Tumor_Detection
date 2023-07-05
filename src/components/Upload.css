@@ -1,68 +1,68 @@
-.container1 {
-    height: 300px;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 30px rgba(0, 0, 0, .2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    gap: 5px;
-    background-color: rgba(0, 110, 255, 0.041);
-    margin: 110px 550px ;
-   
-  }
-  
-  .header {
-    flex: 1;
-    width: 100%;
-    border: 2px dashed royalblue;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .header svg {
-    height: 100px;
-  }
-  
-  .header p {
-    text-align: center;
-    color: black;
-  }
-  
-  .footer {
-    background-color: rgba(0, 110, 255, 0.075);
-    width: 100%;
-    height: 40px;
-    padding: 8px;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    color: black;
-    border: none;
-  }
-  
-  .footer svg {
-    height: 130%;
-    fill: royalblue;
-    background-color: rgba(70, 66, 66, 0.103);
-    border-radius: 50%;
-    padding: 2px;
-    cursor: pointer;
-    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.205);
-  }
-  
-  .footer p {
-    flex: 1;
-    text-align: center;
-  }
-  
-  #file {
-    display: none;
-  }
+.upload-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #e7f8fd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Use your desired box shadow */
+  margin-top: 70px;
+  border: 1px solid #192c54 ;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.preview-container {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.preview-image {
+  width: 220px;
+  height: 220px;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 50px;
+  animation: slide-up 0.5s ease;
+}
+h1:hover{
+  color: white;
+  background-color: #1b3a6b;
+}
+.button2 {
+  padding: 10px 20px;
+  border: none;
+  background-color: #55afdc; /* Use your desired button color */
+  color: #fff; /* Use your desired text color */
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.button2:hover {
+  background-color: #192c54; /* Use your desired hover color */
+  color: white;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}

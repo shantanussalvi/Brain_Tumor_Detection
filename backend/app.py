@@ -28,13 +28,14 @@ def predict():
     predictions = model.predict(finalImg)
 
     pred = predictions.tolist()
-    if(pred[0]):
+    print(pred)
+    if(pred[0][0]):
         return "No Tumor"
-    if(pred[1]):
+    if(pred[0][1]):
         return "Glioma"
-    if(pred[2]):
+    if(pred[0][2]):
         return "Meningioma"
-    if(pred[3]):
+    if(pred[0][3]):
         return "Pituitary Tumor"
     return "Error processing image"
 

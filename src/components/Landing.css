@@ -1,6 +1,6 @@
 /* Navbar */
 .navbar {
-    background-color: #ffffff;
+    background-color: f8f9fa;;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -27,27 +27,124 @@
   }
   
   .nav-link {
-    color: #333333;
-    font-size: 16px;
+    color: #333; /* Use your desired color */
+    font-weight: bold;
+    text-transform: uppercase;
     transition: color 0.3s ease;
   }
   
   .nav-link:hover {
-    color: #007bff;
+    color: white !important;
+    background-color: #1b3a6b;
+    border-radius: 5px;
   }
   
-  .button {
-    background-color: #007bff;
-    color: #ffffff;
+  .button1 {
+    padding: 10px 20px;
     border: none;
-    border-radius: 4px;
-    padding: 8px 16px;
-    font-size: 16px;
-    cursor: pointer;
+    background-color: #86d4fa; /* Use your desired button color */
+    color: #050505; /* Use your desired text color */
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
     transition: background-color 0.3s ease;
   }
   
-  .button:hover {
-    background-color: #0056b3;
+  .button1:hover {
+    color: white;
+    background-color: #1b3a6b;
+  }
+  .d-block {
+    width: 1400px;
+    height:550px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  section {
+    padding: 50px 0;
+    background-color: #edfeff;
+    font-weight: bold;
+  }
+
+  h2 {
+    text-align: center;
+    animation: slide-up 0.5s ease;
+  }
+  h2:hover{
+    color: white;
+    background-color: #1b3a6b;
   }
   
+  
+  p {
+    text-align: justify;
+    animation: fade-in 1s ease;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    animation: fade-in 1s ease;
+  }
+  
+  hr {
+   
+    border-top: 1px solid ;
+    animation: fade-in 1s ease;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: slide-up 0.5s ease;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  #about-us {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+.slide3{
+  width:800px;
+  height: 550px;
+  margin-left: 300px;
+  margin-top: 10px;
+}
+  
+ 
